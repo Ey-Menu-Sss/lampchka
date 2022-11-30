@@ -3,23 +3,24 @@ let body = document.querySelector("body");
 img.style.width = "200px";
 img.style.marginTop = "50px";
 
-setInterval(() => {
+function on() {
+  let src = img.getAttribute("src");
+  if (
+    src === "https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg"
+  ) {
+    img.setAttribute("src","https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg")
+
+  }
+}
+
+function off() {
   let src = img.getAttribute("src");
   if (
     src === "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"
   ) {
-    img.setAttribute(
-      "src",
-      "https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg"
-    );
-  } else {
-    img.setAttribute(
-      "src",
-      "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"
-    );
+    img.setAttribute("src","https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg")
+
   }
-}, 1000);
-
-
+}
 
 
