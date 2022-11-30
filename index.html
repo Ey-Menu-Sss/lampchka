@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         .asd{
             display: flex;
             justify-content: center;
+            align-items: flex-start;
         }
+        .design{
+            margin-top: 50px;
+            padding: 10px 28px;
+            border-color: black;
+            background-color: gray;
+            color: rgb(0, 255, 0);
+            border-radius: 20px;
+        }
+        .design:hover{
+            background-color: rgb(0, 255, 0);
+            color: grey;
+
+        }
+        
     </style>
 </head>
 <body>
-    <div class="asdf"></div>
     <div class="asd">
+        <button onclick="on()" class="design">ON</button>
         <img class="bla" src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" alt="">
+        <button onclick="off()" class="design">OFF</button>
     </div>
     
     <script src="main.js"></script>
